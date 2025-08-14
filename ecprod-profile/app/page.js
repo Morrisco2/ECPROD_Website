@@ -1,16 +1,11 @@
 import React from "react";
 import PageTitleCard from "./components/Morrisco/pageTitleCard";
+import ServiceTemplate from "./components/Mazi/ServicePageTemplate";
 
 export default function Home() {
   return (
     <div className="mb-5">
-      <div className="">
-        <PageTitleCard
-          imageName="Rectangle 20.svg"
-          cardTitle="Contact Us"
-          cardText="Integrated Solutions for Infrastructure, Innovation "
-        />
-      </div>
+      <ServiceTemplate />
     </div>
   );
 }
