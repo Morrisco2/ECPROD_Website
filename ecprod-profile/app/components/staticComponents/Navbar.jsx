@@ -16,21 +16,18 @@ class Navbar extends Component {
 
     return (
       <nav className="grid w-screen bg-gray-200 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 relative">
-        {/* Logo */}
         <div className="pl-3 py-2 w-50 bg-gray-200">
           <img src="images/ECPROD Logo 1.svg" alt="logo" className="w-52" />
         </div>
 
-        {/* Mobile Menu Icon */}
         <div className="flex justify-end items-center px-4 sm:flex md:hidden lg:hidden xl:hidden">
-          <span onClick={this.handleClick}>
+          <span onClick={this.handleClick} className='font-bold text-2xl text-[#0F082B]'>
             {this.state.clicked ? <FaXmark /> : <FaBars />}
           </span>
         </div>
 
-        {/* Navigation Menu */}
         <div
-          className={`bg-white md:rounded-tl-3xl lg:rounded-tl-3xl col-span-2 flex sm:justify-start md:justify-end lg:justify-end pr-4 items-center transition-all duration-500 ease-in-out 
+          className={`bg-white  md:rounded-tl-3xl lg:rounded-tl-3xl col-span-2 flex sm:justify-start md:justify-end lg:justify-end pr-4 items-center transition-all duration-500 ease-in-out 
           ${this.state.clicked ? 'max-h-screen opacity-100 translate-y-0' : 'max-h-0 opacity-0 -translate-y-5'} 
           overflow-hidden md:max-h-none md:opacity-100 md:translate-y-0`}
         >
@@ -54,7 +51,7 @@ class Navbar extends Component {
   }
 }
 
-// Functional wrapper
+// Morrisco's Functional wrapper
 export default function NavbarWrapper() {
   const pathname = usePathname();
   return <Navbar pathname={pathname} />;

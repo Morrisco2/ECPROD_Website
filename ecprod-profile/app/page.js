@@ -1,5 +1,6 @@
 import React from 'react'
-import PageTitleCard from './components/Morrisco/pageTitleCard';
+import ServiceCard from './components/Morrisco/ServiceCard';
+import Form from './components/Morrisco/Form';
 
 export default function Home() {
   return (
@@ -7,7 +8,7 @@ export default function Home() {
 
       <div className=''>
 
-        <PageTitleCard imageName="Rectangle 20.svg" cardTitle="Contact Us" cardText= "Integrated Solutions for Infrastructure, Innovation " />
+        <Form />
 
       </div>
 

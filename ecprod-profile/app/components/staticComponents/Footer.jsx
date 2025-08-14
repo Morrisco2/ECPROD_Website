@@ -6,7 +6,7 @@ import { FaArrowRight } from "react-icons/fa6";
 
 const Footer = () => {
   return (
-    <footer className='mx-5 bg-[rgb(15,8,43)] rounded-tr-3xl rounded-tl-3xl' >
+    <footer className='mx-5 bg-[#0F082B] rounded-tr-3xl rounded-tl-3xl' >
       <div className='grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-4  p-5  text-white'>
 
         <div className='col-span-2 flex flex-col justify-between pr-20 pb-4 '>
@@ -15,7 +15,7 @@ const Footer = () => {
           </div>
           <div className='mt-4 sm:mt-4 sm:mb-6 md:mb-6 lg:mb-0 md:mt-4 lg:mt-0 '>
             <b>Get in Touch</b>
-            <p className='text-gray-400 text-sm'><small> Whether you're planning a major infrastructure project or seeking expert training solutions, we’re ready to partner with you.</small></p>
+            <p className='text-gray-400 text-sm md:pr-5'> Whether you're planning a major infrastructure project or seeking expert training solutions, we’re ready to partner with you.</p>
 
           </div>
 
@@ -30,7 +30,7 @@ const Footer = () => {
           </div>
           <div className='pr-1 mb-6 sm:mb-6 md:mb-6 lg:mb-0'>
             <b className=''>Services</b>
-            <ul className='mt-2 text-sm flex flex-col gap-1 text-gray-400'>
+            <ul className='mt-2 text-sm flex flex-col gap-2 text-gray-400'>
               <li><Link href="#" className='hover:text-gray-300 transition duration-200 ease-in'><small>Civil Works</small> </Link></li>
               <li><Link href="#" className='hover:text-gray-300 transition duration-200 ease-in'><small>Building & Civil Engineering</small></Link></li>
               <li><Link href="#" className='hover:text-gray-300 transition duration-200 ease-in'><small>Environmental Management</small></Link></li>
