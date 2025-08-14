@@ -1,9 +1,16 @@
-import Image from "next/image";
+import React from 'react'
+import PageTitleCard from './components/Morrisco/pageTitleCard';
 
 export default function Home() {
   return (
-   <div>
-      <h1 className="w-screen h-screen flex justify-center items-center">Hello world</h1>
-   </div>
+    <div className='mb-5'>
+
+      <div className=''>
+
+        <PageTitleCard imageName="Rectangle 20.svg" cardTitle="Contact Us" cardText= "Integrated Solutions for Infrastructure, Innovation " />
+
+      </div>
+
+    </div>
   );
 }
