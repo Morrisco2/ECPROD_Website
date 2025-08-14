@@ -1,9 +1,16 @@
 import Image from "next/image";
+import ServiceCard from "./components/ServiceCard.jsx";
+import TestimonialCard from "./components/TestimonialCard.jsx";
+import { FaPersonDigging } from "react-icons/fa6";
 
 export default function Home() {
   return (
-   <div>
-      <h1 className="w-screen h-screen flex justify-center items-center">Hello world</h1>
-   </div>
+    <>
+      <div className="px-10 flex gap-5">
+        <TestimonialCard />
+        <TestimonialCard />
+        <TestimonialCard />
+      </div>
+    </>
   );
 }

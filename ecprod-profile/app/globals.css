@@ -9,8 +9,7 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    --background: #fff;
   }
 }
 
@@ -24,4 +23,8 @@ body {
   .text-balance {
     text-wrap: balance;
   }
+}
+
+.testimonial-clip {
+  clip-path: path("M 25,0 L 230,0 L 250,25 L 250,100 L 270,120 L  Z");
 }
