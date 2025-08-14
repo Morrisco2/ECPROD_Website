@@ -1,16 +1,16 @@
-import Image from "next/image";
-import ServiceCard from "./components/ServiceCard.jsx";
-import TestimonialCard from "./components/TestimonialCard.jsx";
-import { FaPersonDigging } from "react-icons/fa6";
+import React from "react";
+import PageTitleCard from "./components/Morrisco/pageTitleCard";
 
 export default function Home() {
   return (
-    <>
-      <div className="px-10 flex gap-5">
-        <TestimonialCard />
-        <TestimonialCard />
-        <TestimonialCard />
+    <div className="mb-5">
+      <div className="">
+        <PageTitleCard
+          imageName="Rectangle 20.svg"
+          cardTitle="Contact Us"
+          cardText="Integrated Solutions for Infrastructure, Innovation "
+        />
       </div>
-    </>
+    </div>
   );
 }
