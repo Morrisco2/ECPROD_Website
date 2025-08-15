@@ -30,7 +30,7 @@ const ServiceTemplate = ({
 
   return (
     <>
-      <div className="flex flex-col gap-10 md:gap-20 p-5 md:px-10">
+      <div className="flex flex-col gap-10 md:gap-20 p-5 md:px-10 py-20">
         <ol className="flex text-[12px] text-gray-400">
           {pathParts.map((part, index) => {
             const href = "/" + pathParts.slice(0, index + 1).join("/");
@@ -57,7 +57,7 @@ const ServiceTemplate = ({
             <h1 className="text-3xl md:text-5xl font-bold text-[#29166F]">
               {service}
             </h1>
-            <p className="text-[#29166F]">{description}</p>
+            <p className="text-[#29166F] font-semibold">{description}</p>
           </div>
 
           <div className="w-full md:w-1/2">
@@ -79,7 +79,7 @@ const ServiceTemplate = ({
         </section>
 
         <section className="flex flex-col md:flex-row items-start justify-between px-5">
-          <h2 className="text-3xl font-bold text-[#29166F] mb-5">
+          <h2 className="text-2xl md:text-3xl font-bold text-[#29166F] mb-5">
             Why Choose ECPROD?
           </h2>
           <ul className="flex flex-col gap-5 max-w-[600px] list-disc">
