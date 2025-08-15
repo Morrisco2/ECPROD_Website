@@ -1,4 +1,9 @@
+"use client";
+
 import CTASection from "../Morrisco/CTASection";
+import Footer from "../staticComponents/Footer";
+import { usePathname } from "next/navigation";
+import Link from "next/link";
 
 const ServiceTemplate = ({
   service,
@@ -7,48 +12,73 @@ const ServiceTemplate = ({
   capabilitiesTitle,
   capabilities,
 }) => {
-  const cap = [
-    "Road Construction & Rehabilitation – From greenfield roads to the maintenance of existing networks, we deliver smooth, durable, and safe road infrastructure.",
-    "Bridges & Flyovers – Designing and building critical transportation links that enhance connectivity.",
-    "Drainage Systems – Comprehensive surface and subsurface drainage to prevent flooding and protect infrastructure.",
-    "Water Infrastructure – Dams, reservoirs, treatment plants, pipelines, and distribution systems for reliable water access.",
-    "Marine Works – Coastal and marine infrastructure including jetties, quay walls, and shore protection.",
-    "Earthworks & Land Development – Large-scale excavation, filling, grading, and land reclamation for diverse development projects.",
-  ];
+  const pathname = usePathname();
+  const pathParts = pathname.split("/").filter(Boolean);
+
+  const nameMap = {
+    services: "Services",
+    "civil-works": "Civil Works",
+  };
+
+  // Define any segments you want to hide
+  const hiddenSegments = "service-description";
+
+  // Filter out unwanted segments
+  const visibleParts = pathParts.filter(
+    (part) => !hiddenSegments.includes(part)
+  );
 
   return (
     <>
-      <div className="flex flex-col gap-20 px-10">
-        <section className="flex flex-col md:flex-row gap-5 items-center mt-20">
-          <div className="w-1/2 flex flex-col">
-            <h1 className="text-5xl font-bold text-[#29166F]">Civil Works</h1>
-            <p className="text-[#29166F]">
-              ECPROD Nig Ltd delivers civil works that stand the test of time.
-              Our civil engineering projects are executed with precision,
-              safety, and sustainability in mind — ensuring that every structure
-              we build serves people for generations.
-            </p>
+      <div className="flex flex-col gap-10 md:gap-20 p-5 md:px-10">
+        <ol className="flex text-[12px] text-gray-400">
+          {pathParts.map((part, index) => {
+            const href = "/" + pathParts.slice(0, index + 1).join("/");
+            const label = nameMap[part] ?? part;
+            const isLast = index === pathParts.length - 1;
+
+            return (
+              <li key={index} className="flex items-center">
+                <Link href={href} className="hover:underline">
+                  {label}
+                </Link>
+                {!isLast ? (
+                  <>
+                    <span className="mx-1">/</span>
+                  </>
+                ) : null}
+              </li>
+            );
+          })}
+        </ol>
+
+        <section className="flex flex-col md:flex-row gap-5 items-center">
+          <div className="w-full md:w-1/2 flex flex-col gap-5">
+            <h1 className="text-3xl md:text-5xl font-bold text-[#29166F]">
+              {service}
+            </h1>
+            <p className="text-[#29166F]">{description}</p>
           </div>
 
-          <div className="w-1/2">
-            <img src="images/civil-works.svg" alt="" className="w-full" />
+          <div className="w-full md:w-1/2">
+            <img src={imgSrc} alt="" className="w-full" />
           </div>
         </section>
 
-        <section className="flex flex-col items-center">
+        <section className="flex flex-col items-center px-5">
           <div className="w-fit">
             <h3 className="text-2xl font-bold text-[#29166F] mb-5">
-              Our Civil Works Capabilities
+              {capabilitiesTitle}
             </h3>
             <ul className="flex flex-col gap-5 max-w-[600px] list-disc">
-              {cap.map((c, index) => (
-                <li key={index}>{c}</li>
+              {capabilities.map((item, index) => (
+                <li key={index}>{item}</li>
               ))}
             </ul>
           </div>
         </section>
 
-        <section className="flex flex-col md:flex-row items-start justify-between">
+        <section className="flex flex-col md:flex-row items-start justify-between px-5">
           <h2 className="text-3xl font-bold text-[#29166F] mb-5">
             Why Choose ECPROD?
           </h2>

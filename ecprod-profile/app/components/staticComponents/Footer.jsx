@@ -4,12 +4,12 @@ import { FaArrowRight } from "react-icons/fa6";
 
 const Footer = () => {
   return (
-    <footer className="mx-5 bg-[rgb(15,8,43)] rounded-tr-3xl rounded-tl-3xl">
+    <footer className="md:mx-5 bg-[rgb(15,8,43)] md:rounded-t-3xl">
       <div className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-4  p-5  text-white">
         <div className="col-span-2 flex flex-col justify-between pr-20 pb-4 ">
           <div className="w-50 ">
             <img
-              src="images/ECPROD Logo white.svg"
+              src="/images/ECPROD Logo white.svg"
               alt="logo"
               className="w-52"
             />

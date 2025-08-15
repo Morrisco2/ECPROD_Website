@@ -14,16 +14,10 @@ const TestimonialCard = ({ name, position, testimony }) => {
         />
         <div className="bg-white text-black p-2.5 md:p-5 w-full testimonial-clip">
           <div className="mb-10">
-            <h4 className="font-bold text-lg text-[#29166F]">Timothy Bowen</h4>
-            <p className="text-gray-400 text-[14px] w-1/2">
-              CEO, Greystone Properties Ltd
-            </p>
+            <h4 className="font-bold text-lg text-[#29166F]">{name}</h4>
+            <p className="text-gray-400 text-[14px] w-1/2">{position}</p>
           </div>
-          <p className="text-base">
-            ECPROD's building and civil engineering division exceeded our
-            expectations. From blueprint to final brick, they showed unmatched
-            technical competence and collaborative spirit.
-          </p>
+          <p className="text-base">{testimony}</p>
         </div>
       </div>
     </>

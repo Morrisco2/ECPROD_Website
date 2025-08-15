@@ -1,9 +1,11 @@
 import React from "react";
 import { FaArrowRight } from "react-icons/fa6";
+import Link from "next/link";
 
-const Button = ({ text, arrow }) => {
+const Button = ({ text, arrow, link }) => {
   return (
-    <button
+    <Link
+      href={link || "#"}
       className={`px-6 py-3 rounded-3xl flex font-normal items-center justify-center gap-2 ${
         !arrow
           ? "bg-white hover:bg-gray-200 text-[#009A3C] transition duration-200 ease-in"
@@ -16,7 +18,7 @@ const Button = ({ text, arrow }) => {
           <FaArrowRight size={14} />
         </span>
       )}
-    </button>
+    </Link>
   );
 };
 

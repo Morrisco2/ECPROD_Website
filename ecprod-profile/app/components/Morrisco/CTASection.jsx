@@ -4,8 +4,12 @@ import Button from "./Button.jsx";
 const CTASection = () => {
   return (
     <section className="flex flex-col py-4 min-h-96 w-full">
-      <div className="flex flex-col items-center py-3 px-5">
-        <img loading="lazy" src="images/Contact Us.svg" className=" w-4/5" />
+      <div className="flex flex-col w-full items-center py-3 px-5">
+        <img
+          loading="lazy"
+          src="/images/Contact Us.svg"
+          className=" w-full md:w-4/5"
+        />
         <h3 className="text-[#29166F] font-bold text-center">
           Need Expert Solutions You Can Trust?
         </h3>
