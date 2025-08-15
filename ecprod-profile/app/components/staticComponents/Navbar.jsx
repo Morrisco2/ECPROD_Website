@@ -17,7 +17,7 @@ class Navbar extends Component {
     return (
       <nav
         className={
-          "grid w-full sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 relative"
+          "grid w-full sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 absolute top-0"
         }
       >
         {/* Logo */}
@@ -37,7 +37,7 @@ class Navbar extends Component {
           className={`col-span-2 flex sm:justify-start md:justify-end lg:justify-end items-center transition-all duration-500 ease-in-out 
           ${
             this.state.clicked
-              ? "max-h-screen opacity-100 translate-y-0"
+              ? "max-h-screen opacity-100 translate-y-0 bg-white"
               : "max-h-0 opacity-0 -translate-y-5"
           } 
           overflow-hidden md:max-h-none md:opacity-100 md:translate-y-0`}
