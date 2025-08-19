@@ -17,12 +17,12 @@ class Navbar extends Component {
     return (
       <nav
         className={
-          "grid w-full sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 absolute top-0"
+          "grid w-full sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 absolute top-5 px-2.5 z-50"
         }
       >
         {/* Logo */}
         <div className=" px-5 md:px-10 py-5 w-50">
-          <img src="/images/ECPROD Logo 1.svg" alt="logo" className="w-52" />
+          <img src="/images/ECPROD Logo 1.svg" alt="logo" className="w-60" />
         </div>
 
         {/* Mobile Menu Icon */}
@@ -49,7 +49,7 @@ class Navbar extends Component {
                   pathname === "/"
                     ? "bg-[#009A3C] text-white"
                     : "hover:bg-gray-200 hover:text-green-950"
-                } px-4 py-2 rounded-3xl`}
+                } px-4 py-2 rounded-3xl transition-colors duration-300`}
               >
                 Home
               </Link>
@@ -61,7 +61,7 @@ class Navbar extends Component {
                   pathname === "/about"
                     ? "bg-[#009A3C] text-white"
                     : "hover:bg-gray-200 hover:text-green-950"
-                } px-4 py-2 rounded-3xl`}
+                } px-4 py-2 rounded-3xl transition-colors duration-300`}
               >
                 About Us
               </Link>
@@ -73,7 +73,7 @@ class Navbar extends Component {
                   pathname === "/services"
                     ? "bg-[#009A3C] text-white"
                     : "hover:bg-gray-200 hover:text-green-950"
-                } px-4 py-2 rounded-3xl`}
+                } px-4 py-2 rounded-3xl transition-colors duration-300`}
               >
                 Our Services
               </Link>
@@ -85,7 +85,7 @@ class Navbar extends Component {
                   pathname === "/contact"
                     ? "bg-[#009A3C] text-white"
                     : "hover:bg-gray-200 hover:text-green-950"
-                } px-4 py-2 rounded-3xl`}
+                } px-4 py-2 rounded-3xl transition-colors duration-300`}
               >
                 Contact Us
               </Link>
