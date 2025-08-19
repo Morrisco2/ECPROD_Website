@@ -1,5 +1,6 @@
 "use client";
 
+import useScrollAnimation from "@/app/hooks/useScrollAnimation";
 import CTASection from "../Morrisco/CTASection";
 import Footer from "../staticComponents/Footer";
 import { usePathname } from "next/navigation";
@@ -12,6 +13,8 @@ const ServiceTemplate = ({
   capabilitiesTitle,
   capabilities,
 }) => {
+  useScrollAnimation();
+
   const pathname = usePathname();
   const pathParts = pathname.split("/").filter(Boolean);
 
@@ -20,10 +23,8 @@ const ServiceTemplate = ({
     "civil-works": "Civil Works",
   };
 
-  // Define any segments you want to hide
   const hiddenSegments = "service-description";
 
-  // Filter out unwanted segments
   const visibleParts = pathParts.filter(
     (part) => !hiddenSegments.includes(part)
   );
@@ -52,7 +53,7 @@ const ServiceTemplate = ({
           })}
         </ol>
 
-        <section className="flex flex-col md:flex-row gap-5 items-center">
+        <section className="flex flex-col md:flex-row gap-5 items-center section">
           <div className="w-full md:w-1/2 flex flex-col gap-5">
             <h1 className="text-3xl md:text-5xl font-bold text-[#29166F]">
               {service}
@@ -60,12 +61,12 @@ const ServiceTemplate = ({
             <p className="text-[#29166F] font-semibold">{description}</p>
           </div>
 
-          <div className="w-full md:w-1/2">
+          <div className="w-full md:w-1/2 rounded-[20px] overflow-hidden">
             <img src={imgSrc} alt="" className="w-full" />
           </div>
         </section>
 
-        <section className="flex flex-col items-center px-5">
+        <section className="flex flex-col items-center px-5 section">
           <div className="w-fit">
             <h3 className="text-2xl font-bold text-[#29166F] mb-5">
               {capabilitiesTitle}
@@ -78,7 +79,7 @@ const ServiceTemplate = ({
           </div>
         </section>
 
-        <section className="flex flex-col md:flex-row items-start justify-between px-5">
+        <section className="flex flex-col md:flex-row items-start justify-between px-5 section">
           <h2 className="text-2xl md:text-3xl font-bold text-[#29166F] mb-5">
             Why Choose ECPROD?
           </h2>
