@@ -30,14 +30,14 @@ const CoreValueCard = ({ cardTitle, cardText }) => {
     ]
 
     return (
-        <div className='flex flex-wrap gap-2 justify-center '>
+        <div className='flex flex-wrap gap-4 justify-center '>
             {
                 cardDetails.map((card, index) => {
                     return (
-                        <div key={index} className='flex flex-col justify-center gap-4 pb-4 items-center text-center  h-48 w-48 py-5 px-5 bg-gray-200 text-black rounded-xl'>
-                            <div className='flex justify-center items-center'><b>{card.cardTitle}</b></div>
+                        <div key={index} className='flex flex-col justify-center gap-2 pb-4 items-center text-center  h-36 w-36 py-5 px-1 bg-[#d1c3ff] text-black rounded-xl'>
+                            <div className='flex justify-center items-center px-5'><small className='font-bold'>{card.cardTitle}</small></div>
                             <div>
-                                <small className='font-thin flex justify-center items-center text-center text-black'>{card.cardText}</small>
+                                <small className='font-thin text-xs flex justify-center items-center text-center text-black'>{card.cardText}</small>
                             </div>
                         </div>
                     )

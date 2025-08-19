@@ -32,7 +32,6 @@ class Navbar extends Component {
           </span>
         </div>
 
-        {/* Navigation Menu */}
         <div
           className={`col-span-2 flex sm:justify-start md:justify-end lg:justify-end items-center transition-all duration-500 ease-in-out 
           ${
@@ -98,7 +97,7 @@ class Navbar extends Component {
   }
 }
 
-// Functional wrapper
+// Morrisco's Functional wrapper
 export default function NavbarWrapper() {
   const pathname = usePathname();
   return <Navbar pathname={pathname} />;

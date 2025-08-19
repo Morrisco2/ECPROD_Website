@@ -188,3 +188,18 @@ body {
     1.475% 7.67%
   );
 }
+
+
+
+/* UseScrollEffect Hook css */
+.section {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: all 0.6s ease-out;
+}
+
+/* Animated state */
+.section.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
