@@ -10,14 +10,14 @@ const TestimonialCard = ({ name, position, testimony }) => {
         <img
           src="images/quotation.svg"
           alt="quotation mark"
-          className="absolute right-0 top-2 scale-90"
+          className="absolute right-0 top-0 scale-50 lg:scale-75"
         />
-        <div className="bg-white text-black p-2.5 md:p-5 w-full testimonial-clip">
+        <div className="bg-white text-black p-5 h-full w-full testimonial-clip">
           <div className="mb-10">
             <h4 className="font-bold text-lg text-[#29166F]">{name}</h4>
-            <p className="text-gray-400 text-[14px] w-1/2">{position}</p>
+            <p className="text-gray-400 text-xs w-[60%]">{position}</p>
           </div>
-          <p className="text-base">{testimony}</p>
+          <p className="text-xs lg:text-base">{testimony}</p>
         </div>
       </div>
     </>

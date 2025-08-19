@@ -6,7 +6,7 @@ const Button = ({ text, arrow, link }) => {
   return (
     <Link
       href={link || "#"}
-      className={`px-6 py-3 rounded-3xl flex font-normal items-center justify-center gap-2 ${
+      className={`w-fit px-6 py-2 rounded-3xl flex font-normal items-center justify-center gap-2 text-xs md:text-sm ${
         !arrow
           ? "bg-white hover:bg-gray-200 text-[#009A3C] transition duration-200 ease-in"
           : "bg-[#009A3C] hover:bg-[#057227] text-white transition duration-200 ease-in"

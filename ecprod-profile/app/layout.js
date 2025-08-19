@@ -11,13 +11,14 @@ const lato = Lato({
 
 export const metadata = {
   title: "ECPROD",
-  description: "",
+  description:
+    "ECPROD Nig Ltd delivers expert civil works, engineering, environmental management, training, and project solutions for Nigeria’s sustainable growth.",
 };
 
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={`${lato.className}`}>
+      <body className={`${lato.className} pt-5`}>
         <Navbar />
         {children}
         <Footer />
