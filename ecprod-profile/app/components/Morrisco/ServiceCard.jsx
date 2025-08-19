@@ -1,12 +1,11 @@
 import React from "react";
 import {
   FaHardHat,
-  FaBuilding,
   FaTasks,
   FaLeaf,
   FaChalkboardTeacher,
 } from "react-icons/fa";
-import { GiOilDrum } from "react-icons/gi";
+import { GiOilDrum, GiCrane } from "react-icons/gi";
 
 const ServiceCard = () => {
   const cardMaterial = [
@@ -15,7 +14,7 @@ const ServiceCard = () => {
       cardTitle: "Civil Works",
     },
     {
-      iconName: FaBuilding,
+      iconName: GiCrane,
       cardTitle: "Building & Civil Engineering",
     },
     {
@@ -41,7 +40,7 @@ const ServiceCard = () => {
         return (
           <div
             key={index}
-            className="flex flex-col justify-between pb-6 items-center md:min-w-36 py-5 px-5 bg-gray-200 rounded-xl"
+            className="flex flex-col justify-between pb-6 items-center md:min-w-36 py-5 px-5 bg-[#F3F2F7] rounded-xl"
           >
             <div className="h-12 w-12 flex justify-center items-center p-1 rounded-full bg-[#29166F] text-white text-xl">
               {<card.iconName />}
