@@ -5,9 +5,12 @@ import Button from "./components/Morrisco/Button";
 import CTASection from "./components/Morrisco/CTASection";
 import ServiceCard from "./components/Morrisco/ServiceCard";
 import TestimonialCard from "./components/Mazi/TestimonialCard";
+import useScrollAnimation from "./hooks/useScrollAnimation";
 import { useState, useEffect } from "react";
 
 export default function Home() {
+  useScrollAnimation();
+
   const [testimonialPadding, setTestimonialPadding] = useState("px-20");
   const [largeContainer, setLargeContainer] = useState("block");
   const [smallContainer, setSmallContainer] = useState("hidden");
@@ -45,7 +48,9 @@ export default function Home() {
 
   return (
     <>
-      <section className={`px-5 drop-shadow-sm mb-24 ${largeContainer}`}>
+      <section
+        className={`px-5 drop-shadow-sm mb-24 ${largeContainer} section`}
+      >
         <div
           className="hero-clip md:bg-white h-fit bg-img items-center px-5 pt-20 flex flex-col md:flex-row justify-between bg-no-repeat bg-right-bottom bg-contain"
           style={{ backgroundImage: "url('/images/hero-bg-img.svg')" }}
@@ -75,7 +80,9 @@ export default function Home() {
         </div>
       </section>
 
-      <section className={`px-5 drop-shadow-sm mb-24 ${smallContainer}`}>
+      <section
+        className={`px-5 drop-shadow-sm mb-24 ${smallContainer} section`}
+      >
         <div
           className="bg-white h-fit rounded-[20px] bg-img items-center px-5 pt-20 flex flex-col md:flex-row justify-between bg-no-repeat bg-right-bottom bg-contain"
           style={{ backgroundImage: "url('/images/hero-bg-img.svg')" }}
@@ -105,7 +112,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="px-5 flex flex-col items-center text-center mb-24">
+      <section className="px-5 flex flex-col items-center text-center mb-24 section">
         <h3 className="text-[#29166F] text-xl md:text-2xl font-bold">
           Our Mission
         </h3>
@@ -116,7 +123,7 @@ export default function Home() {
         </p>
       </section>
 
-      <section className="px-5 items-center mb-24">
+      <section className="px-5 items-center mb-24 section">
         <div className="bg-white shadow-sm w-full rounded-3xl p-5 flex flex-col md:flex-row justify-between items-center">
           <div className="md:w-[35%] mb-5 md:mb-0">
             <h3 className="text-[#29166F] text-xl md:text-2xl font-bold">
@@ -136,7 +143,7 @@ export default function Home() {
       </section>
 
       <section
-        className={`flex flex-col items-center ${valueProposition} mb-24`}
+        className={`flex flex-col items-center ${valueProposition} mb-24 section`}
       >
         <h3 className="text-[#29166F] text-xl md:text-2xl font-bold mb-5">
           Why Choose ECPROD Nig Ltd?
@@ -186,7 +193,7 @@ export default function Home() {
       </section>
 
       <section
-        className=" p-5 md:p-0 mb-24 flex flex-col-reverse md:flex-row items-center gap-10 bg-right-top md:bg-right-bottom bg-contain bg-no-repeat"
+        className="p-5 md:p-0 mb-24 flex flex-col-reverse md:flex-row items-center gap-10 bg-top md:bg-right-bottom bg-contain bg-no-repeat section"
         style={{ backgroundImage: "url('/images/hero-bg-img.svg')" }}
       >
         <div className="w-full md:w-1/2 lg:w-2/5 pt-5 place-items-center md:pl-32 md:pr-10 md:pt-5 border rounded-[20px] md:rounded-none md:rounded-r-[20px] bg-[linear-gradient(to_top_right,#29166F,#16446F,#166F48,#009A3C)]">
@@ -197,11 +204,11 @@ export default function Home() {
           />
         </div>
 
-        <div className="">
+        <div>
           <h3 className="text-[#29166F] text-xl md:text-2xl font-bold">
             Sustainability First
           </h3>
-          <p className="w-4/5">
+          <p className="md:w-4/5">
             We believe progress must balance economic growth, environmental
             protection, and social responsibility. Our solutions are built with
             the future in mind.
@@ -209,7 +216,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="mb-24">
+      <section className="mb-24 section">
         <h3 className="text-[#29166F] text-xl md:text-2xl text-center font-bold mb-5">
           Hear From Our Other Clients and Partners
         </h3>

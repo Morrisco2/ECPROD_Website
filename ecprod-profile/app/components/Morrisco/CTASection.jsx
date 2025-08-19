@@ -1,10 +1,15 @@
+"use client";
+
+import useScrollAnimation from "@/app/hooks/useScrollAnimation.jsx";
 import React from "react";
 import Button from "./Button.jsx";
 
 const CTASection = () => {
+  useScrollAnimation();
+
   return (
-    <section className="flex flex-col py-4 min-h-96 w-full">
-      <div className="flex flex-col w-full items-center py-3 px-5">
+    <section className="flex flex-col py-4 min-h-96 w-full section px-5">
+      <div className="flex flex-col w-full items-center py-3">
         <img
           loading="lazy"
           src="/images/Contact Us.svg"
