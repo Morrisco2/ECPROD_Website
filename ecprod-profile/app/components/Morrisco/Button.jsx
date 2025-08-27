@@ -2,7 +2,7 @@ import React from "react";
 import { FaArrowRight } from "react-icons/fa6";
 import Link from "next/link";
 
-const Button = ({ text, arrow, link }) => {
+const Button = ({ text, arrow, link="/contact" }) => {
   return (
     <Link
       href={link || "#"}

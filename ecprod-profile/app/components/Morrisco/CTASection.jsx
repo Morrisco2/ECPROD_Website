@@ -16,14 +16,12 @@ const CTASection = () => {
           className=" w-full md:w-4/5"
         />
         <h3 className="text-[#29166F] font-bold text-center">
-          Need Expert Solutions You Can Trust?
+          <b> ECPROD Nig Ltd -</b> Building a Better Future, Together
         </h3>
       </div>
       <div className="flex justify-center items-center mt-2 mb-4">
         <small className="w-96 text-center text-sm text-gray-500">
-          ECPROD Nig Ltd is ready to bring your vision to life. From concept to
-          completion, our team is here to support your goals with experience,
-          innovation, and integrity.
+        
         </small>
       </div>
       <div className="relative flex justify-center items-center w-full h-full">

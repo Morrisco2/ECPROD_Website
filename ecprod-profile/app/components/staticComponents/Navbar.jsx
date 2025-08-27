@@ -1,14 +1,30 @@
 "use client";
 import Link from "next/link";
-import React, { Component, useState, useEffect } from "react";
+import React, { Component, useEffect, useState } from "react";
 import { FaXmark, FaBars } from "react-icons/fa6";
 import { usePathname } from "next/navigation";
 
 class Navbar extends Component {
-  state = { clicked: false };
+  state = { clicked: false, isScrolled: false };
 
   handleClick = () => {
     this.setState({ clicked: !this.state.clicked });
+  };
+
+  componentDidMount() {
+    window.addEventListener("scroll", this.handleScroll);
+  }
+
+  componentWillUnmount() {
+    window.removeEventListener("scroll", this.handleScroll);
+  }
+
+  handleScroll = () => {
+    if (window.scrollY > 0) {
+      this.setState({ isScrolled: true });
+    } else {
+      this.setState({ isScrolled: false });
+    }
   };
 
   render() {
@@ -16,18 +32,18 @@ class Navbar extends Component {
 
     return (
       <nav
-        className={
-          "grid w-full sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 absolute top-5 px-2.5 z-50"
-        }
+        className={`fixed grid w-full sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 top-0 px-2.5 z-50 transition-colors duration-300 ${
+          this.state.isScrolled ? "bg-white shadow-md" : "bg-transparent"
+        }`}
       >
         {/* Logo */}
-        <div className=" px-5 md:px-10 py-5 w-50">
+        <div className="px-5 md:px-10 py-5 w-50">
           <img src="/images/ECPROD Logo 1.svg" alt="logo" className="w-60" />
         </div>
 
         {/* Mobile Menu Icon */}
         <div className="flex justify-end items-center px-5 sm:flex md:hidden lg:hidden xl:hidden">
-          <span onClick={this.handleClick}>
+          <span onClick={this.handleClick} className="text-3xl font-extrabold">
             {this.state.clicked ? <FaXmark /> : <FaBars />}
           </span>
         </div>

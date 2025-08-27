@@ -57,16 +57,14 @@ export default function Home() {
         >
           <div className="w-1/2">
             <h1 className="text-3xl md:text-3xl lg:text-5xl text-[#29166F] font-bold mb-2">
-              Your Trusted Partner in Sustainable Development and Growth
+              Building a Better Future, Together
             </h1>
             <p className="text-[#808080] mb-10">
-              ECPROD Nig Ltd is a multidisciplinary company delivering
-              innovative solutions across civil engineering, construction,
-              environmental management, and more.
+              Trusted partner in civil engineering, construction, environmental solutions, and sustainable development for growth.
             </p>
             <div className="flex gap-5">
               <Button text="Contact us" arrow={true} link="/contact" />
-              <Button text="Learn more" link="/contact" />
+              <Button text="Learn more" link="/about" />
             </div>
           </div>
 
@@ -117,9 +115,7 @@ export default function Home() {
           Our Mission
         </h3>
         <p className="text-[#808080] md:w-4/5 lg:w-3/5">
-          At ECPROD Nig Ltd, we are committed to providing high-quality,
-          client-focused services while upholding ethical standards and
-          promoting sustainable development across Nigeria.
+          Our mission is to provide clients with innovative, sustainable, and tailor-made solutions that propel them towards success.
         </p>
       </section>
 
@@ -133,7 +129,7 @@ export default function Home() {
               Explore our comprehensive range of services designed to drive
               infrastructural growth and empower industries:
             </p>
-            <Button text="View all services" arrow={true} />
+            <Button text="View all services" arrow={true} link="/services" />
           </div>
 
           <div className="w-full md:w-[65%] lg:w-2/5">
@@ -209,9 +205,7 @@ export default function Home() {
             Sustainability First
           </h3>
           <p className="md:w-4/5">
-            We believe progress must balance economic growth, environmental
-            protection, and social responsibility. Our solutions are built with
-            the future in mind.
+            Environmental responsibility is integral to our approach. We incorporate sustainable  practices into every project, from design to construction and beyond, minimizing our  ecological footprint and maximizing long-term benefits for both clients and the  environment.
           </p>
         </div>
       </section>
