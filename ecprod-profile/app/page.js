@@ -48,9 +48,7 @@ export default function Home() {
 
   return (
     <>
-      <section
-        className={`px-5 drop-shadow-sm mb-24 ${largeContainer} section`}
-      >
+      <section className={`px-5 drop-shadow-sm mb-24 ${largeContainer}`}>
         <div
           className="hero-clip md:bg-white h-fit bg-img items-center px-5 pt-20 flex flex-col md:flex-row justify-between bg-no-repeat bg-right-bottom bg-contain"
           style={{ backgroundImage: "url('/images/hero-bg-img.svg')" }}
@@ -66,7 +64,7 @@ export default function Home() {
             </p>
             <div className="flex gap-5">
               <Button text="Contact us" arrow={true} link="/contact" />
-              <Button text="Learn more" link="/contact" />
+              <Button text="Learn more" link="/about" />
             </div>
           </div>
 
@@ -133,7 +131,7 @@ export default function Home() {
               Explore our comprehensive range of services designed to drive
               infrastructural growth and empower industries:
             </p>
-            <Button text="View all services" arrow={true} />
+            <Button text="View all services" arrow={true} link="/services" />
           </div>
 
           <div className="w-full md:w-[65%] lg:w-2/5">

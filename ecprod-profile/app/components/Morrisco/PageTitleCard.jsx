@@ -14,7 +14,7 @@ const PageTitleCard = ({
   };
 
   return (
-    <section className="h-96 mt-20 px-4 border w-full">
+    <section className="h-96 mt-20 px-4 w-full">
       <div
         className={`pl-4 h-96 gap-3 rounded-xl flex justify-center flex-col ${textColor}`}
         style={pageTitleCSS}
