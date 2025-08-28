@@ -32,8 +32,8 @@ class Navbar extends Component {
 
     return (
       <nav
-        className={`fixed grid w-full sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 top-0 px-2.5 z-50 transition-colors duration-300 ${
-          this.state.isScrolled ? "bg-white shadow-md" : "bg-transparent"
+        className={`fixed grid w-full sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 top-0 px-2.5 pt-5 z-50 transition-all duration-300 ${
+          this.state.isScrolled ? "bg-white shadow-md pt-0" : "bg-transparent"
         }`}
       >
         {/* Logo */}

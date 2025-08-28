@@ -4,7 +4,7 @@ import useScrollAnimation from "@/app/hooks/useScrollAnimation.jsx";
 import React from "react";
 import Button from "./Button.jsx";
 
-const CTASection = () => {
+const CTASection = (btnLink) => {
   useScrollAnimation();
 
   return (
@@ -36,7 +36,7 @@ const CTASection = () => {
         </div>
 
         <div className="absolute flex justify-center items-center z-50">
-          <Button text="Contact Us" arrow={true} />
+          <Button text="Contact Us" arrow={true} link="/contact" />
         </div>
       </div>
     </section>
