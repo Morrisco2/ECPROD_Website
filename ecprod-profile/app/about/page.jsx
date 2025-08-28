@@ -84,7 +84,7 @@ const About = () => {
       </div>
       <div className="min-h-80 mb-24 px-4 section text-start md:text-start">
         <div
-          className={`grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2  pl-4 min-h-80 gap-3 rounded-xl flex justify-center flex-col bg-[#E4DFF4]`}
+          className={`grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2  pl-4 min-h-80 gap-3 rounded-xl justify-center flex-col bg-[#E4DFF4]`}
         >
           <div className="pr-14  flex flex-col justify-center">
             <h1 className="text-3xl font-bold text-[#29166F] mb-5">
@@ -112,7 +112,7 @@ const About = () => {
 
       <div className="min-h-80 mb-24 px-4 section">
         <div
-          className={`grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2  pl-4 min-h-80 gap-3 rounded-xl flex justify-center flex-col `}
+          className={`grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2  pl-4 min-h-80 gap-3 rounded-xl justify-center flex-col `}
         >
           <div className="h-60 sm:h-72 md:h-80 lg:h-full">
             <div
@@ -144,7 +144,7 @@ const About = () => {
 
       <div className="min-h-80 mb-24 px-4 section text-start md:text-start">
         <div
-          className={`grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2  pl-4 min-h-80 gap-3 rounded-xl flex justify-center flex-col bg-[#DFF8E9]`}
+          className={`grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2  pl-4 min-h-80 gap-3 rounded-xl justify-center flex-col bg-[#DFF8E9]`}
         >
           <div className="pr-10 flex flex-col justify-center">
             <h1 className="text-3xl font-bold text-[#29166F] mb-5">
@@ -174,7 +174,7 @@ const About = () => {
 
       <div className="min-h-80 mb-24 px-4 section">
         <div
-          className={`grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2  pl-4 min-h-80 gap-3 rounded-xl flex justify-center flex-col `}
+          className={`grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2  pl-4 min-h-80 gap-3 rounded-xl justify-center flex-col `}
         >
           <div className="h-60 sm:h-72 md:h-80 lg:h-full">
             <div
@@ -215,13 +215,13 @@ const About = () => {
         >
           <div className=" flex justify-center items-center my-6">
             <div className="flex items-center justify-center m-2 bg-transparent lg:m-5 ">
-              <h1 className="text-3xl font-bold text-white mb-5 text-center">
+              <h1 className="text-3xl font-bold text-white text-center">
                 Our Core Values
               </h1>
             </div>
           </div>
 
-          <div className="pr-10 flex flex-col justify-center items-center mb-3">
+          <div className="pr-10 flex flex-col justify-center w-full items-center mb-3 relative overflow-hidden">
             <CoreValueCard2 />
           </div>
         </div>

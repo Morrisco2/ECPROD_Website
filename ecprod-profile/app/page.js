@@ -6,6 +6,7 @@ import CTASection from "./components/Morrisco/CTASection";
 import ServiceCard from "./components/Morrisco/ServiceCard";
 import TestimonialCard from "./components/Mazi/TestimonialCard";
 import useScrollAnimation from "./hooks/useScrollAnimation";
+import Image from "next/image";
 import { useState, useEffect } from "react";
 
 export default function Home() {
@@ -58,7 +59,8 @@ export default function Home() {
               Building a Better Future, Together
             </h1>
             <p className="text-[#808080] mb-10">
-              Trusted partner in civil engineering, construction, environmental solutions, and sustainable development for growth.
+              Trusted partner in civil engineering, construction, environmental
+              solutions, and sustainable development for growth.
             </p>
             <div className="flex gap-5">
               <Button text="Contact us" arrow={true} link="/contact" />
@@ -113,7 +115,8 @@ export default function Home() {
           Our Mission
         </h3>
         <p className="text-[#808080] md:w-4/5 lg:w-3/5">
-          Our mission is to provide clients with innovative, sustainable, and tailor-made solutions that propel them towards success.
+          Our mission is to provide clients with innovative, sustainable, and
+          tailor-made solutions that propel them towards success.
         </p>
       </section>
 
@@ -203,33 +206,31 @@ export default function Home() {
             Sustainability First
           </h3>
           <p className="md:w-4/5">
-            Environmental responsibility is integral to our approach. We incorporate sustainable  practices into every project, from design to construction and beyond, minimizing our  ecological footprint and maximizing long-term benefits for both clients and the  environment.
+            Environmental responsibility is integral to our approach. We
+            incorporate sustainable practices into every project, from design to
+            construction and beyond, minimizing our ecological footprint and
+            maximizing long-term benefits for both clients and the environment.
           </p>
         </div>
       </section>
 
       <section className="mb-24 section">
         <h3 className="text-[#29166F] text-xl md:text-2xl text-center font-bold mb-5">
-          Hear From Our Other Clients and Partners
+          Our Partners
         </h3>
 
         <div
-          className={`flex flex-col md:flex-row ${testimonialPadding} md:px-10 lg:px-32 gap-5`}
+          className={`flex justify-center md:flex-row ${testimonialPadding} md:px-10 lg:px-32 gap-10`}
         >
-          <TestimonialCard
-            name="Timothy Bowen"
-            position="CEO, Greystone Properties Ltd"
-            testimony="ECPROD's building and civil engineering division exceeded our expectations. From blueprint to final brick, they showed unmatched technical competence and collaborative spirit."
+          <img
+            src="/images/infusion-group.png"
+            alt="Infusion group Logo"
+            className="w-1/3"
           />
-          <TestimonialCard
-            name="Jessica Rhone"
-            position="Sustainability Consultant, GreenEarth International"
-            testimony="Their team conducted a thorough Environmental Impact Assessment for our development site and provided practical, sustainable solutions. It's rare to find such dedication to eco-responsibility in this industry."
-          />
-          <TestimonialCard
-            name="Ben Donovan"
-            position="Vocational Training Alumnus"
-            testimony="The skills training I received from ECPROD opened doors for me. The instructors were supportive, and the hands-on sessions gave me real confidence. I now work as a certified technician!"
+          <img
+            src="/images/graceland-enterprises.png"
+            alt="Graceland Enterprises logo"
+            className="w-1/3"
           />
         </div>
       </section>
