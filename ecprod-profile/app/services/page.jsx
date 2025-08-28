@@ -22,64 +22,64 @@ const Services = () => {
       icon: <FaHardHat />,
       title: "Civil Works",
       description:
-        "From highways to hydrology, our civil engineering team delivers critical infrastructure with precision and purpose.",
-      link: "/services/civil-works",
+        "We undertake a wide spectrum of civil engineering projects, including road construction and rehabilitation, bridges, drainage systems, water infrastructure, and other essential infrastructure development.",
+      link: "/civil-works",
     },
     {
       icon: <GiCrane />,
       title: "Building & Civil Engineering",
       description:
-        "We design and construct residential, commercial, industrial, and institutional buildings — combining architectural vision with engineering accuracy.",
-      link: "/services/building-and-civil-engineering",
+        "Our Building and Civil Engineering division integrates architectural vision with engineering precision to  deliver functional, aesthetically pleasing, and sustainable structures.",
+      link: "/building-and-civil-engineering",
     },
     {
       icon: <FaLeaf />,
       title: "Environmental Management",
       description:
-        "We champion sustainability through impact assessments, pollution control, and land remediation. Our services ensure your projects align with global environmental standards.",
-      link: "/services/environmental-management",
+        "Recognizing the critical importance of environmental sustainability, our Environmental Management  division offers a range of services to minimize environmental impact and promote responsible practices",
+      link: "/environmental-management",
     },
     {
       icon: <FaChalkboardTeacher />,
       title: "Skill Training",
       description:
-        "We close skill gaps by offering vocational, digital, and professional training programs — equipping individuals and organizations with tools to succeed.",
-      link: "/services/skill-training",
+        "Our Skills Training services are designed to bridge the skills gap, enhance productivity, and foster a  culture of continuous learning across various sectors.",
+      link: "/skill-training",
     },
     {
       icon: <FaTasks />,
       title: "Project Management",
       description:
-        "Our project managers lead with strategy, structure, and success in mind. From planning to execution, we ensure your vision becomes reality.",
-      link: "/services/project-management",
+        "Our Project Management division provides expert leadership and coordination to ensure projects are  delivered efficiently, effectively, and to the highest standards.",
+      link: "/project-management",
     },
     {
       icon: <GiOilDrum />,
       title: "Petroleum Products",
       description:
-        "We ensure efficient sourcing, distribution, and logistics of petroleum products — powering industries with reliability and integrity.",
-      link: "/services/petroleum-products",
+        "Our involvement in the petroleum products sector ensures a reliable supply of essential energy resources.",
+      link: "/petroleum-products",
     },
     {
       icon: <FaBuilding />,
       title: "Property Investment",
       description:
-        "We identify, acquire, and develop high-value real estate assets that generate long-term returns and urban growth.",
-      link: "/services/property-investment",
+        "Our Property Investment division strategically identifies and develops real estate opportunities to  generate value and contribute to urban development.",
+      link: "/property-investment",
     },
     {
       icon: <GiCargoCrate />,
       title: "Import & Export",
       description:
-        "We streamline international trade, connecting clients to global markets with reliable sourcing, documentation, and logistics solutions.",
-      link: "/services/import-and-export",
+        "Our Import and Export division facilitates seamless international trade for a variety of goods and  commodities.",
+      link: "/import-and-export",
     },
     {
       icon: <FaFileContract />,
       title: "General Contracts",
       description:
-        "With cross-sector capabilities and deep experience, we manage and execute large-scale projects with quality, speed, and precision.",
-      link: "/services/general-contracts",
+        "Leveraging our diverse capabilities and extensive network, we undertake general contracts  across various sectors. We act as a reliable partner, managing and executing projects with a  focus on quality, efficiency, and client satisfaction.",
+      link: "/general-contracts",
     },
   ];
   return (

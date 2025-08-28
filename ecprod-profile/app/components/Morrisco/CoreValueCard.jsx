@@ -22,10 +22,11 @@ const CoreValueCard = ({ cardTitle, cardText }) => {
       cardTitle: "Sustainabilty",
       cardText: "Balancing growth with long-term impact",
     },
+
   ];
 
   return (
-    <div className="grid grid-cols-2 md:grid-cols-3 gap-2 lg:gap-5 ">
+    <div className="flex flex-wrap justify-center gap-2 md:justify-start lg:gap-5 lg:justify-start  ">
       {cardDetails.map((card, index) => {
         return (
           <div

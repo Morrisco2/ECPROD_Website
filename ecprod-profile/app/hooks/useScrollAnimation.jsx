@@ -14,7 +14,7 @@ export default function useScrollAnimation() {
         if (sectionTop < window.innerHeight * 0.8 && sectionBottom > 0) {
           section.classList.add("visible");
         } else {
-          section.classList.remove("visible"); 
+          section.classList.remove("visible");
         }
       });
     }
